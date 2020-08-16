@@ -1,0 +1,121 @@
+main .logoBase {
+  position: absolute;
+  top: 11px;
+  left: 19px; }
+  main .logoBase img {
+    width: 49%; }
+
+main .gnavArea {
+  background: #0098f5;
+  height: 60px;
+  position: relative; }
+
+main .gnav {
+  width: 845px;
+  margin: 0 auto;
+  padding: 19px;
+  display: flex; }
+  main .gnav li {
+    margin-right: 16px;
+    position: relative; }
+  main .gnav li a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+  main .gnav li:last-of-type {
+    margin-right: 0; }
+  main .gnav__onair, main .gnav__character, main .gnav__news, main .gnav__staff, main .gnav__story, main .gnav__product, main .gnav__excite {
+    background: url(../common/img/onair.png) no-repeat;
+    height: 21px;
+    width: 84px; }
+    main .gnav__onair:hover, main .gnav__character:hover, main .gnav__news:hover, main .gnav__staff:hover, main .gnav__story:hover, main .gnav__product:hover, main .gnav__excite:hover {
+      background: url(../common/img/onairHover.svg) no-repeat; }
+      main .gnav__onair:hover .pen, main .gnav__character:hover .pen, main .gnav__news:hover .pen, main .gnav__staff:hover .pen, main .gnav__story:hover .pen, main .gnav__product:hover .pen, main .gnav__excite:hover .pen {
+        width: 100%;
+        opacity: 1; }
+    main .gnav__onair .pen, main .gnav__character .pen, main .gnav__news .pen, main .gnav__staff .pen, main .gnav__story .pen, main .gnav__product .pen, main .gnav__excite .pen {
+      width: 0px;
+      height: 3px;
+      content: '';
+      opacity: 0;
+      background: #ff0;
+      position: absolute;
+      bottom: -7px;
+      transition: all 0.5s; }
+    main .gnav__onair .pen::after, main .gnav__character .pen::after, main .gnav__news .pen::after, main .gnav__staff .pen::after, main .gnav__story .pen::after, main .gnav__product .pen::after, main .gnav__excite .pen::after {
+      width: 13px;
+      height: 27px;
+      content: '';
+      background: url(../common/img/pen.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      right: -10px; }
+  main .gnav__character {
+    background: url(../common/img/character.png) no-repeat;
+    height: 21px;
+    width: 114px; }
+    main .gnav__character:hover {
+      background: url(../common/img/characterHover.svg) no-repeat; }
+      main .gnav__character:hover .pen {
+        width: 100%;
+        opacity: 1; }
+  main .gnav__news {
+    background: url(../common/img/news.png) no-repeat;
+    height: 21px;
+    width: 70px; }
+    main .gnav__news:hover {
+      background: url(../common/img/newsHover.svg) no-repeat; }
+      main .gnav__news:hover .pen {
+        width: 100%;
+        opacity: 1; }
+  main .gnav__staff {
+    background: url(../common/img/staff.png) no-repeat;
+    height: 21px;
+    width: 162px; }
+    main .gnav__staff:hover {
+      background: url(../common/img/staffHover.svg) no-repeat; }
+      main .gnav__staff:hover .pen {
+        width: 100%;
+        opacity: 1; }
+  main .gnav__story {
+    background: url(../common/img/story.png) no-repeat;
+    height: 21px;
+    width: 80px; }
+    main .gnav__story:hover {
+      background: url(../common/img/story.svg) no-repeat; }
+      main .gnav__story:hover .pen {
+        width: 100%;
+        opacity: 1; }
+  main .gnav__product {
+    background: url(../common/img/product.png) no-repeat;
+    height: 21px;
+    width: 83px; }
+    main .gnav__product:hover {
+      background: url(../common/img/productHover.svg) no-repeat; }
+      main .gnav__product:hover .pen {
+        width: 100%;
+        opacity: 1; }
+  main .gnav__excite {
+    background: url(../common/img/excite.png) no-repeat;
+    height: 21px;
+    width: 120px; }
+    main .gnav__excite:hover {
+      background: url(../common/img/exciteHover.svg) no-repeat; }
+      main .gnav__excite:hover .pen {
+        width: 100%;
+        opacity: 1; }
+
+footer {
+  width: 100%;
+  min-width: 1080px;
+  height: 35px;
+  padding: 10px 0;
+  background: #e9528e;
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+  font-size: 9px;
+  font-weight: bold; }

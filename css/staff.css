@@ -1,0 +1,91 @@
+main {
+  background: url(../common/img/bg_plaid_purple.png); }
+  main .gnavArea {
+    background: #a5308c; }
+    main .gnavArea .gnav__staff {
+      background: url(../common/img/staffHover.svg) no-repeat; }
+  main .staffcast {
+    padding-top: 35px;
+    position: relative; }
+    main .staffcast .title {
+      width: 280px;
+      margin: 0 auto; }
+  main .info {
+    width: 828px;
+    margin: 35px auto 0;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 130px; }
+    main .info .infoInner {
+      width: 828px;
+      padding: 34px 0 33px 30px;
+      background: url(../common/img/bg_info_inner.png) repeat-y; }
+      main .info .infoInner .staff {
+        margin-bottom: 30px; }
+        main .info .infoInner .staff__title {
+          width: 240px;
+          margin: 0 auto 20px; }
+        main .info .infoInner .staff .head {
+          margin: 0 auto; }
+          main .info .infoInner .staff .head img {
+            margin-bottom: 5px; }
+        main .info .infoInner .staff .head.original {
+          width: 122px; }
+          main .info .infoInner .staff .head.original img {
+            width: 30%; }
+        main .info .infoInner .staff .other {
+          color: #0082fa;
+          margin-bottom: 30px; }
+        main .info .infoInner .staff .name {
+          line-height: 1;
+          font-size: 25px; }
+        main .info .infoInner .staff .small {
+          font-size: 12px; }
+        main .info .infoInner .staff .small.try {
+          display: block;
+          margin-top: 10px; }
+        main .info .infoInner .staff .name.man {
+          color: #0082fa; }
+        main .info .infoInner .staff .icon {
+          width: 14px;
+          height: 14px; }
+          main .info .infoInner .staff .icon img {
+            width: 7%;
+            margin-right: 5px; }
+        main .info .infoInner .staff .column3 {
+          display: flex;
+          margin: 0 auto 35px;
+          width: 630px; }
+        main .info .infoInner .staff .name.woman {
+          color: #e9528e; }
+        main .info .infoInner .staff .name.double {
+          color: #ff8c00; }
+        main .info .infoInner .staff .name.double.product {
+          margin-bottom: 60px; }
+        main .info .infoInner .staff .column2 {
+          width: 630px;
+          margin: 0 0 30px 140px;
+          display: flex; }
+        main .info .infoInner .staff .media img {
+          width: 5%; }
+        main .info .infoInner .staff .icon.double2 img {
+          width: 3%; }
+        main .info .infoInner .staff .name.purple {
+          color: #a5308c;
+          margin-bottom: 30px; }
+        main .info .infoInner .staff .yagi {
+          margin-right: 180px; }
+        main .info .infoInner .staff .head.seiya img {
+          width: 21%; }
+        main .info .infoInner .staff .icon.man.seiyaIcon img {
+          width: 4%; }
+        main .info .infoInner .staff .igarashiLi {
+          margin-right: 138px; }
+          main .info .infoInner .staff .igarashiLi img {
+            width: 31%; }
+        main .info .infoInner .staff .icon.woman.igarashi img {
+          width: 5%; }
+        main .info .infoInner .staff .cast__title {
+          margin-bottom: 30px; }
+        main .info .infoInner .staff .headName img {
+          width: 26%; }

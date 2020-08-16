@@ -1,0 +1,586 @@
+main{
+  background:url(../common/img/bg_main.jpeg);
+  height: 880px;
+  background-size:cover;
+  position: relative;
+  overflow: hidden;
+  .gnav{
+    width: 845px;
+    margin: 0 auto;
+    padding: 19px;
+    display:flex;
+    li{
+      margin-right: 16px;
+      position: relative;
+    }
+    li a{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+    li:last-of-type{
+      margin-right: 0;
+    }
+    &__onair{
+      background:url(../common/img/onair.png) no-repeat;
+      height: 21px;
+      width: 84px;
+      &:hover{
+        background: url(../common/img/onairHover.svg)no-repeat;
+        .pen{
+          width: 100%;
+          opacity: 1;
+        }
+      }
+      .pen{
+        width: 0px;
+        height: 3px;
+        content: '';
+        opacity: 0;
+        background: #ff0;
+        position: absolute;
+        bottom: -7px;
+        transition: all 0.5s;
+      }
+      .pen::after{
+        width: 13px;
+        height: 27px;
+        content: '';
+        background:url(../common/img/pen.png)no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        right: -10px;
+      }
+    }
+    &__character{
+      @extend .gnav__onair;
+      background:url(../common/img/character.png)no-repeat;
+      height:21px;
+      width: 114px;
+      &:hover{
+        background:url(../common/img/characterHover.svg)no-repeat;
+      }
+    }
+    &__news{
+      @extend .gnav__onair;
+      background:url(../common/img/news.png) no-repeat;
+      height: 21px;
+      width: 70px;
+      &:hover{
+        background:url(../common/img/newsHover.svg)no-repeat;
+      }
+    }
+    &__staff{
+      @extend .gnav__onair;
+      background:url(../common/img/staff.png)no-repeat;
+      height: 21px;
+      width: 162px;
+      &:hover{
+        background:url(../common/img/staffHover.svg)no-repeat;
+      }
+    }
+    &__story{
+      @extend .gnav__onair;
+      background:url(../common/img/story.png)no-repeat;
+      height: 21px;
+      width: 80px;
+      &:hover{
+        background:url(../common/img/story.svg)no-repeat;
+      }
+    }
+    &__product{
+      @extend .gnav__onair;
+      background:url(../common/img/product.png)no-repeat;
+      height: 21px;
+      width: 83px;
+      &:hover{
+        background:url(../common/img/productHover.svg)no-repeat;
+      }
+    }
+    &__excite{
+      @extend .gnav__onair;
+      background:url(../common/img/excite.png)no-repeat;
+      height: 21px;
+      width: 120px;
+      &:hover{
+        background:url(../common/img/exciteHover.svg)no-repeat;
+      }
+    }
+  }
+  .banana{
+    position: absolute;
+    bottom: -118px;
+    left: 37%;
+    z-index: 3;
+    height: 53%;
+    overflow: hidden;
+    animation: bananaMove 2s linear infinite;
+    max-height: 61%;
+    min-height: 53%;
+    img{
+      width: 311px;
+      height: 470px;
+    }
+  }
+  @keyframes bananaMove{
+    0%{
+      margin-left: 0;
+    }
+    25%{
+      margin-left: 10px;
+    }
+    50%{
+      margin-left: 0;
+    }
+    75%{
+      margin-left: -10px;
+    }
+    100%{
+      margin-left: 0;
+    }
+  }
+  .akiho{
+    position: absolute;
+    top: 24%;
+    left: 39%;
+    z-index: 1;
+    img{
+      height: 603px;
+    }
+    .akihoShadow{
+      opacity: 0;
+      position: absolute;
+      left: -3px;
+      top: -6px;
+      &.active{
+        opacity: 0.5;
+      }
+    }
+    .akihoHover{
+      position: absolute;
+      left: 0;
+      opacity: 0;
+    }
+  }
+  .akiho:hover{
+    .akihoHover{
+      opacity: 1;
+    }
+  }
+  .shizuku{
+    position: absolute;
+    z-index: 2;
+    top: 36%;
+    left: 55%;
+    img{
+      height: 603px;
+    }
+    .shizukuShadow{
+      opacity: 0;
+      position: absolute;
+      left: -7px;
+      top: -21px;
+      &.active{
+        opacity: 0.5;
+      }
+    }
+    .shizukuHover{
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: -21px;
+    }
+  }
+  .shizuku:hover{
+    .shizukuHover{
+      opacity: 1;
+    }
+  }
+  .kanata{
+    position: absolute;
+    z-index: 2;
+    top: 37%;
+    left: 23%;
+    img{
+      height: 603px;
+    }
+    .kanataShadow{
+      opacity: 0;
+      position: absolute;
+      left: -3px;
+      top: -4px;
+      &.active{
+        opacity: 0.5;
+      }
+    }
+    .kanataHover{
+      position: absolute;
+      left: 0;
+      opacity: 0;
+    }
+  }
+  .kanata:hover{
+    .kanataHover{
+      opacity: 1;
+    }
+  }
+  .rina{
+    position: absolute;
+    z-index: 1;
+    top: 27%;
+    left: 10%;
+    img{
+      height: 571px;
+    }
+    .rinaShadow{
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      &.active{
+        opacity: 0.5;
+      }
+    }
+    .rinaHover{
+      position: absolute;
+      left: 0;
+      opacity: 0;
+    }
+  }
+  .rina:hover{
+    .rinaHover{
+      opacity: 1;
+    }
+  }
+  .igarashi{
+    position: absolute;
+    top: 17%;
+    left: 28%;
+    img{
+      height: 535px;
+    }
+    .igarashiShadow{
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: -5px;
+      &.active{
+        opacity: 0.5;
+      }
+    }
+    .igarashiHover{
+      position: absolute;
+      left: 0;
+      top: -6px;
+      opacity: 0;
+    }
+  }
+  .igarashi:hover{
+    .igarashiHover{
+      opacity: 1;
+    }
+  }
+  .shizumori{
+    position: absolute;
+    top: 16%;
+    left: 57%;
+    img{
+      height: 533px;
+    }
+    .shizumoriShadow{
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: -20px;
+      &.active{
+        opacity: 0.5;
+      }
+    }
+    .shizumoriHover{
+      position: absolute;
+      left: 0;
+      top: -18px;
+      opacity: 0;
+    }
+  }
+  .shizumori:hover{
+    .shizumoriHover{
+      opacity: 1;
+    }
+  }
+  .aikawa{
+    position: absolute;
+    z-index: 1;
+    top: 27%;
+    left: 71%;
+    img{
+      height: 527px;
+    }
+    .aikawaShadow{
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: -16px;
+      &.active{
+        opacity: 0.5;
+      }
+    }
+    .aikawaHover{
+      position: absolute;
+      left: 0;
+      top: -19px;
+      opacity: 0;
+    }
+  }
+  .aikawa:hover{
+    .aikawaHover{
+      opacity: 1;
+    }
+  }
+  .bdBanner{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    img{
+      width: 120px;
+    }
+  }
+  .logo{
+    z-index: 4;
+  }
+  .logo.fix{
+    position: fixed;
+    bottom: 8%;
+    left: 3%;
+    img{
+      width: 70%;
+    }
+  }
+  .logo.fix.active{
+    position: absolute;
+    bottom: 25px;
+  }
+  .catch{
+    z-index: 4;
+  }
+  .catch.fix{
+    position: fixed;
+    bottom: 6%;
+    right: -3%;
+    img{
+      width: 58%;
+    }
+  }
+  .catch.fix.active{
+    position: absolute;
+    bottom: 25px;
+  }
+}
+.border{
+  width: 100%;
+  height: 10px;
+  content: '';
+  display: block;
+  background: #e9528e;
+  background-image: radial-gradient(#c8426b 25%,transparent 0),radial-gradient(#c8426b 25%,transparent 0);
+  background-position: 0 0,15px 25px;
+  background-size: 10px 10px;
+}
+.infoArea{
+  position: relative;
+  display: flex;
+  &__newsArea{
+    background:url(../common/img/infoback2.png);
+    height: 1000px;
+    width: 62%;
+    position: relative;
+    &__animal{
+      position: absolute;
+      width: 550px;
+      height: 543px;
+      left: 0;
+      bottom: 0;
+      img{
+        opacity:0.5;
+      }
+    }
+    &__bananaP{
+      width: 123px;
+      height: 72px;
+      position: absolute;
+      top: 10px;
+      right: 70px;
+    }
+    &__news{
+      width: 632px;
+      margin: 0 auto;
+      position: absolute;
+      right: 5%;
+      &__title{
+        width: 160px;
+        margin: 22px auto 5px;
+      }
+      &__post{
+        background:url(../common/img/textback.png);
+        width: 305px;
+        height: 286px;
+        margin-right: 8px;
+        padding: 20px 22px 0 40px;
+        color: #7f2334;
+        font-weight: bold;
+        display: inline-block;
+        position: relative;
+        &__date{
+          width: 92px;
+          height: 19px;
+          color: #e9528e;
+          padding-top: 3px;
+          font-size: 7px;
+        }
+        &__thumb{
+          width: 235px;
+          height: 128px;
+          margin: 10px 0;
+          position: relative;
+          a{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+          }
+        }
+        &__tit{
+          margin-bottom: 2px;
+          font-size: 12px;
+          &::before{
+            width: 8px;
+            height: 13px;
+            content: '';
+            margin-right: 3px;
+            background:url(../common/img/hart.png);
+            display: inline-block;
+          }
+        }
+        &__content{
+          width: 230px;
+          height: 50px;
+          font-size: 11px;
+          line-height: 18px;
+        }
+      }
+      &__post.active::after{
+        width: 276px;
+        height: 224px;
+        position: absolute;
+        top: 12%;
+        left: 7%;
+        content: '';
+        background:url(../common/img/over_banana_pink.png)no-repeat;
+      }
+      &__post:hover{
+        &.active::after{
+          animation: bananaAnime 0.3s linear forwards;
+        }
+      }
+      @keyframes bananaAnime{
+        0%{
+          transform: scale(1);
+        }
+        50%{
+          transform: rotate(10deg) scale(0.9);
+        }
+        100%{
+          transform: rotate(20deg) scale(0.8);
+        }
+      }
+      &__loveLine{
+        width: 630px;
+        height: 17px;
+        margin: 10px 0;
+        content: '';
+        background:url(../common/img/loveline.png);
+      }
+      &__btnNews{
+        width: 73px;
+        height: 81px;
+        margin: 15px auto 0;
+        background:url(../common/img/more2.png);
+      }
+    }
+  }
+  &__twitterArea{
+    background:url(../common/img/twitterback.png);
+    height: 1000px;
+    width: 38%;
+    position: relative;
+    &__genderP{
+      width: 82px;
+      height: 59px;
+      position: absolute;
+      top: 30px;
+      left: 13px;
+    }
+    &__beefstew{
+      width: 165px;
+      height: 220px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    &__twitter{
+      margin-top: 22px;
+      position: absolute;
+      left: 10%;
+      &__title{
+        width: 185px;
+        margin: 0 auto;
+      }
+      &__timeLine{
+        background:url(../common/img/twittertextback.png);
+        width: 321px;
+        height: 612px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      &__btn{
+        background:url(../common/img/twitterlogo.png);
+        width: 73px;
+        height: 81px;
+        margin: 15px auto 0;
+        position: relative;
+        a{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+  &__bannerArea{
+    width: 865px;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    margin-left: -425px;
+    display: flex;
+    justify-content: center;
+    li:first-of-type{
+      margin-right: 15px;
+    }
+    li:first-of-type img:first-of-type{
+      margin: 0 auto 5px;
+    }
+    li:first-of-type img:last-of-type{
+      width: 100%;
+    }
+    li img{
+      display: block;
+    }
+  }
+}

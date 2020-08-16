@@ -1,0 +1,232 @@
+main{
+  background:url(../common/img/bg_plaid_orange.png);
+  padding-bottom: 100px;
+  position: relative;
+  .gnavArea{
+    background-color:#ff8c00;
+    .gnav__character{
+      background:url(../common/img/characterHover.svg)no-repeat;
+    }
+  }
+  .character{
+    position: relative;
+    z-index: 1;
+    width: 925px;
+    margin: 0 auto;
+    padding-top: 43px;
+    .title{
+      width: 210px;
+      margin: 0 auto;
+    }
+    .characterList{
+      width: 740px;
+      margin: 20px auto 0;
+      text-align: center;
+      .akiho::after{
+        background:url(../common/img/over_akiho.png)no-repeat;
+        animation: charaAnime 0.1s linear forwards;
+      }
+      .haruka::after{
+        background:url(../common/img/over_haruka.png)no-repeat;
+        animation: charaAnime 0.1s linear forwards;
+      }
+      .shizuku::after{
+        background:url(../common/img/over_shizuku.png)no-repeat;
+        animation: charaAnime 0.1s linear forwards;
+      }
+      .rina::after{
+        background:url(../common/img/over_rina.png)no-repeat;
+        animation: charaAnime 0.1s linear forwards;
+      }
+      .kanata::after{
+        background:url(../common/img/over_kanata.png)no-repeat;
+        animation: charaAnime 0.1s linear forwards;
+      }
+      .igarashi::after{
+        background:url(../common/img/over_igarashi.png)no-repeat;
+        animation: charaAnime 0.1s linear forwards;
+      }
+      .shizumori::after{
+        background:url(../common/img/over_shizumori.png)no-repeat;
+        animation: charaAnime 0.1s linear forwards;
+      }
+      .aikawa::after{
+        background:url(../common/img/over_aikawa.png)no-repeat;
+        animation: charaAnime 0.1s linear forwards;
+      }
+      .seiya::after{
+        background:url(../common/img/over_seiya.png)no-repeat;
+        animation: charaAnime 0.1s linear forwards;
+      }
+      .omori::after{
+        background:url(../common/img/over_shizumori.png)no-repeat;
+        animation: charaAnime 0.1s linear forwards;
+      }
+      .koshimizu::after{
+        background:url(../common/img/over_koshimizu.png)no-repeat;
+        animation: charaAnime 0.1s linear forwards;
+      }
+      .huyumi::after{
+        background:url(../common/img/over_huyumi.png)no-repeat;
+        animation: charaAnime 0.1s linear forwards;
+      }
+      .natuo::after{
+        background:url(../common/img/over_natsuo.png)no-repeat;
+        animation: charaAnime 0.1s linear forwards;
+      }
+      .active::after{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 220px;
+        height: 220px;
+        margin: -110px 0 0 -110px;
+        content: '';
+      }
+      @keyframes charaAnime{
+        0%{
+          transform: scale(1);
+        }
+        50%{
+          transform: scale(0.9) rotate(12deg);
+        }
+        100%{
+          transform: scale(0.8) rotate(24deg);
+        }
+      }
+      li{
+        width: 224px;
+        height: 200px;
+        margin: 0 28px 45px 0;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+      }
+      li:nth-of-type(3){
+        margin-right: 0;
+      }
+      li:nth-of-type(4){
+        margin-left: 10px;
+      }
+      li:nth-of-type(5){
+        margin-right: 0;
+      }
+      li:nth-of-type(8){
+        margin-right: 0;
+      }
+      li:last-of-type{
+        margin-right: 0;
+      }
+    }
+    .character::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  .leftChara{
+    opacity: 0.25;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .rightChara{
+    opacity: 0.25;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .detail{
+    width: 643px;
+    height: 629px;
+    margin: -315px 0 0 -322px;
+    padding: 48px 0 0 52px;
+    background-size: cover;
+  }
+  .detail{
+    display:none;
+  }
+  .detail.open{
+    background:url(../common/img/onairTextback.png)no-repeat;
+    width: 643px;
+    height: 629px;
+    margin: -315px 0 0 -322px;
+    padding: 48px 0 0 52px;
+    background-size: cover;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 6;
+    display: block;
+    .picArea{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 643px;
+      height: 629px;
+    }
+    .detailArea{
+      position: absolute;
+      top: 22px;
+      left: 222px;
+      .name{
+        width: 334px;
+      }
+      .text{
+        line-height: 1.6;
+        width: 360px;
+        margin: 6px 0 0 20px;
+        font-size: .9rem;
+        font-weight: 700;
+        text-align: justify;
+      }
+      .pink{
+        border-bottom: 1px solid #e9528e;
+      }
+    }
+    .btn{
+      width: 48px;
+      height: 12px;
+      content: '';
+      cursor: pointer;
+    }
+    .btn.prev{
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background:url(../common/img/prev.svg)no-repeat;
+      background-size: cover;
+    }
+    .btn.next{
+      background:url(../common/img/next.svg)no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+    .closeChara{
+      background:url(../common/img/btn_close_sexy.png)no-repeat;
+      width: 171px;
+      height: 246px;
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      cursor: pointer;
+    }
+  }
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  background: rgba(255,140,0,.6);
+  opacity: 0;
+  z-index: -1;
+}
+.overlay.open{
+  opacity: 1;
+  z-index: 5;
+}

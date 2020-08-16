@@ -1,0 +1,135 @@
+main{
+  background:url(../common/img/bg_plaid_purple.png);
+  .gnavArea{
+    background: #a5308c;
+    .gnav__staff{
+      background:url(../common/img/staffHover.svg)no-repeat;
+    }
+  }
+  .staffcast{
+    padding-top: 35px;
+    position: relative;
+    .title{
+      width: 280px;
+      margin: 0 auto;
+    }
+  }
+  .info{
+    width: 828px;
+    margin: 35px auto 0;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 130px;
+    .infoInner{
+      width: 828px;
+      padding: 34px 0 33px 30px;
+      background:url(../common/img/bg_info_inner.png)repeat-y;
+      .staff{
+        margin-bottom: 30px;
+        &__title{
+          width: 240px;
+          margin: 0 auto 20px;
+        }
+        .head{
+          margin: 0 auto;
+          img{
+            margin-bottom: 5px;
+          }
+        }
+        .head.original{
+          width: 122px;
+          img{
+            width: 30%;
+          }
+        }
+        .other{
+          color: #0082fa;
+          margin-bottom: 30px;
+        }
+        .name{
+          line-height: 1;
+          font-size: 25px;
+        }
+        .small{
+          font-size: 12px;
+        }
+        .small.try{
+          display: block;
+          margin-top: 10px;
+        }
+        .name.man{
+          color: #0082fa;
+        }
+        .icon{
+          width: 14px;
+          height: 14px;
+          img{
+            width: 7%;
+            margin-right: 5px;
+          }
+        }
+        .column3{
+          display:flex;
+          margin: 0 auto 35px;
+          width: 630px;
+        }
+        .name.woman{
+          color: #e9528e;
+        }
+        .name.double{
+          color: #ff8c00;
+        }
+        .name.double.product{
+          margin-bottom: 60px;
+        }
+        .column2{
+          width: 630px;
+          margin: 0 0 30px 140px;
+          display: flex;
+        }
+        .media{
+          img{
+            width: 5%;
+          }
+        }
+        .icon.double2{
+          img{
+            width:3%;
+          }
+        }
+        .name.purple{
+          color: #a5308c;
+          margin-bottom: 30px;
+        }
+        .yagi{
+          margin-right: 180px;
+        }
+        .head.seiya img{
+          width: 21%;
+        }
+        .icon.man.seiyaIcon{
+          img{
+            width: 4%;
+          }
+        }
+        .igarashiLi{
+          margin-right: 138px;
+          img{
+            width: 31%;
+          }
+        }
+        .icon.woman.igarashi{
+          img{
+            width: 5%;
+          }
+        }
+        .cast__title{
+          margin-bottom: 30px;
+        }
+        .headName img{
+          width: 26%;
+        }
+      }
+    }
+  }
+}

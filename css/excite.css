@@ -1,0 +1,145 @@
+main {
+  background: url(../common/img/bg_plaid_orange.png);
+  padding-bottom: 70px; }
+  main .gnavArea {
+    background: #f03c00; }
+  main .gnav__excite {
+    background: url(../common/img/exciteHover.svg) no-repeat; }
+  main .excite {
+    width: 925px;
+    margin: 0 auto;
+    padding-top: 30px; }
+    main .excite .title {
+      width: 175px;
+      margin: 0 auto 20px; }
+    main .excite__nav {
+      display: flex;
+      justify-content: center; }
+      main .excite__nav__movie {
+        height: 27px;
+        width: 82px;
+        background: url(../common/img/movie.png) no-repeat;
+        background-size: 100%;
+        margin-left: 50px; }
+      main .excite__nav__download {
+        height: 27px;
+        width: 136px;
+        background: url(../common/img/download2.png) no-repeat;
+        background-size: 100%;
+        position: relative; }
+      main .excite__nav__download::after {
+        background: url(../common/img/over_pen_o.png) no-repeat;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -40px 0 0 -45px;
+        content: '';
+        display: none; }
+      main .excite__nav__download.active::after {
+        display: block;
+        animation: pen 0.1s steps(18) forwards; }
+      main .excite__nav__interview {
+        height: 23px;
+        width: 141px;
+        background: url(../common/img/interview2.png) no-repeat;
+        background-size: 100%;
+        position: relative; }
+      main .excite__nav__interview::after {
+        background: url(../common/img/over_pen_o.png) no-repeat;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -40px 0 0 -45px;
+        content: '';
+        display: none; }
+      main .excite__nav__interview.active::after {
+        display: block;
+        animation: pen 0.1s steps(18) forwards; }
+
+@keyframes pen {
+  100% {
+    background-position: -1360px; } }
+      main .excite__nav li:nth-of-type(n+2) {
+        margin-left: 30px; }
+    main .excite__inner {
+      background: url(../common/img/bg_info_inner.png) repeat-y;
+      background-size: 100%;
+      width: 951px;
+      padding-top: 38px;
+      margin-top: 50px; }
+      main .excite__inner__head {
+        height: 29px;
+        margin: 0 auto;
+        text-align: center; }
+        main .excite__inner__head img {
+          width: 15%; }
+      main .excite__inner__movie {
+        width: 780px;
+        margin: 50px auto 70px;
+        list-style: none;
+        font-weight: bold;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative; }
+        main .excite__inner__movie li {
+          width: 365px;
+          margin: 0 25px 30px 0;
+          position: relative; }
+          main .excite__inner__movie li .new {
+            position: absolute;
+            top: -45px;
+            left: 5px;
+            width: 68px;
+            height: 38px; }
+          main .excite__inner__movie li .subject {
+            width: 365px;
+            padding-top: 3px;
+            color: #f03c00;
+            display: flex;
+            margin-top: 5px;
+            font-size: 18px; }
+          main .excite__inner__movie li .subject::before {
+            background: url(../common/img/movieicon.svg) no-repeat;
+            background-size: cover;
+            width: 19px;
+            height: 19px;
+            margin-right: 3px;
+            content: ''; }
+          main .excite__inner__movie li .overBanana::after {
+            width: 276px;
+            height: 224px;
+            position: absolute;
+            top: 44%;
+            left: 50%;
+            margin: -112px 0 0 -138px;
+            content: '';
+            display: none;
+            background: url(../common/img/over_banana_pink.png) no-repeat; }
+          main .excite__inner__movie li .overBanana.active::after {
+            display: block;
+            animation: bananaAnime 0.2s linear forwards; }
+
+@keyframes bananaAnime {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: rotate(10deg) scale(0.9); }
+  100% {
+    transform: rotate(20deg) scale(0.8); } }
+        main .excite__inner__movie li:nth-of-type(3n) {
+          background: url(../common/img/orangeline.svg) no-repeat;
+          background-size: cover;
+          width: 781px;
+          height: 15px; }
+        main .excite__inner__movie .movieEnd {
+          position: absolute;
+          left: -86px;
+          bottom: -30px;
+          background: url(../common/img/bg_info_end.png) no-repeat;
+          background-size: 100%;
+          height: 30px;
+          width: 951px; }

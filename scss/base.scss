@@ -1,0 +1,157 @@
+main{
+  .logoBase{
+    position: absolute;
+    top: 11px;
+    left: 19px;
+    img{
+      width: 49%;
+    }
+  }
+  .gnavArea{
+    background: #0098f5;
+    height: 60px;
+    position: relative;
+  }
+  .gnav{
+    width: 845px;
+    margin: 0 auto;
+    padding: 19px;
+    display:flex;
+    li{
+      margin-right: 16px;
+      position: relative;
+    }
+    li a{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+    li:last-of-type{
+      margin-right: 0;
+    }
+    &__onair{
+      background:url(../common/img/onair.png) no-repeat;
+      height: 21px;
+      width: 84px;
+      &:hover{
+        background:url(../common/img/onairHover.svg)no-repeat;
+        .pen{
+          width: 100%;
+          opacity: 1;
+        }
+      }
+      .pen{
+        width: 0px;
+        height: 3px;
+        content: '';
+        opacity: 0;
+        background: #ff0;
+        position: absolute;
+        bottom: -7px;
+        transition: all 0.5s;
+      }
+      .pen::after{
+        width: 13px;
+        height: 27px;
+        content: '';
+        background:url(../common/img/pen.png)no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        right: -10px;
+      }
+    }
+    &__character{
+      @extend .gnav__onair;
+      background:url(../common/img/character.png)no-repeat;
+      height:21px;
+      width: 114px;
+      &:hover{
+        background:url(../common/img/characterHover.svg)no-repeat;
+        .pen{
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+    &__news{
+      @extend .gnav__onair;
+      background:url(../common/img/news.png) no-repeat;
+      height: 21px;
+      width: 70px;
+      &:hover{
+        background:url(../common/img/newsHover.svg)no-repeat;
+        .pen{
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+    &__staff{
+      @extend .gnav__onair;
+      background:url(../common/img/staff.png)no-repeat;
+      height: 21px;
+      width: 162px;
+      &:hover{
+        background:url(../common/img/staffHover.svg)no-repeat;
+        .pen{
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+    &__story{
+      @extend .gnav__onair;
+      background:url(../common/img/story.png)no-repeat;
+      height: 21px;
+      width: 80px;
+      &:hover{
+        background:url(../common/img/story.svg)no-repeat;
+        .pen{
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+    &__product{
+      @extend .gnav__onair;
+      background:url(../common/img/product.png)no-repeat;
+      height: 21px;
+      width: 83px;
+      &:hover{
+        background:url(../common/img/productHover.svg)no-repeat;
+        .pen{
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+    &__excite{
+      @extend .gnav__onair;
+      background:url(../common/img/excite.png)no-repeat;
+      height: 21px;
+      width: 120px;
+      &:hover{
+        background:url(../common/img/exciteHover.svg)no-repeat;
+        .pen{
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+footer{
+  width: 100%;
+  min-width: 1080px;
+  height: 35px;
+  padding: 10px 0;
+  background: #e9528e;
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+  font-size: 9px;
+  font-weight: bold;
+}

@@ -1,0 +1,450 @@
+main {
+  background: url(../common/img/bg_main.jpeg);
+  height: 880px;
+  background-size: cover;
+  position: relative;
+  overflow: hidden; }
+  main .gnav {
+    width: 845px;
+    margin: 0 auto;
+    padding: 19px;
+    display: flex; }
+    main .gnav li {
+      margin-right: 16px;
+      position: relative; }
+    main .gnav li a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0; }
+    main .gnav li:last-of-type {
+      margin-right: 0; }
+    main .gnav__onair, main .gnav__character, main .gnav__news, main .gnav__staff, main .gnav__story, main .gnav__product, main .gnav__excite {
+      background: url(../common/img/onair.png) no-repeat;
+      height: 21px;
+      width: 84px; }
+      main .gnav__onair:hover, main .gnav__character:hover, main .gnav__news:hover, main .gnav__staff:hover, main .gnav__story:hover, main .gnav__product:hover, main .gnav__excite:hover {
+        background: url(../common/img/onairHover.svg) no-repeat; }
+        main .gnav__onair:hover .pen, main .gnav__character:hover .pen, main .gnav__news:hover .pen, main .gnav__staff:hover .pen, main .gnav__story:hover .pen, main .gnav__product:hover .pen, main .gnav__excite:hover .pen {
+          width: 100%;
+          opacity: 1; }
+      main .gnav__onair .pen, main .gnav__character .pen, main .gnav__news .pen, main .gnav__staff .pen, main .gnav__story .pen, main .gnav__product .pen, main .gnav__excite .pen {
+        width: 0px;
+        height: 3px;
+        content: '';
+        opacity: 0;
+        background: #ff0;
+        position: absolute;
+        bottom: -7px;
+        transition: all 0.5s; }
+      main .gnav__onair .pen::after, main .gnav__character .pen::after, main .gnav__news .pen::after, main .gnav__staff .pen::after, main .gnav__story .pen::after, main .gnav__product .pen::after, main .gnav__excite .pen::after {
+        width: 13px;
+        height: 27px;
+        content: '';
+        background: url(../common/img/pen.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        right: -10px; }
+    main .gnav__character {
+      background: url(../common/img/character.png) no-repeat;
+      height: 21px;
+      width: 114px; }
+      main .gnav__character:hover {
+        background: url(../common/img/characterHover.svg) no-repeat; }
+    main .gnav__news {
+      background: url(../common/img/news.png) no-repeat;
+      height: 21px;
+      width: 70px; }
+      main .gnav__news:hover {
+        background: url(../common/img/newsHover.svg) no-repeat; }
+    main .gnav__staff {
+      background: url(../common/img/staff.png) no-repeat;
+      height: 21px;
+      width: 162px; }
+      main .gnav__staff:hover {
+        background: url(../common/img/staffHover.svg) no-repeat; }
+    main .gnav__story {
+      background: url(../common/img/story.png) no-repeat;
+      height: 21px;
+      width: 80px; }
+      main .gnav__story:hover {
+        background: url(../common/img/story.svg) no-repeat; }
+    main .gnav__product {
+      background: url(../common/img/product.png) no-repeat;
+      height: 21px;
+      width: 83px; }
+      main .gnav__product:hover {
+        background: url(../common/img/productHover.svg) no-repeat; }
+    main .gnav__excite {
+      background: url(../common/img/excite.png) no-repeat;
+      height: 21px;
+      width: 120px; }
+      main .gnav__excite:hover {
+        background: url(../common/img/exciteHover.svg) no-repeat; }
+  main .banana {
+    position: absolute;
+    bottom: -118px;
+    left: 37%;
+    z-index: 3;
+    height: 53%;
+    overflow: hidden;
+    animation: bananaMove 2s linear infinite;
+    max-height: 61%;
+    min-height: 53%; }
+    main .banana img {
+      width: 311px;
+      height: 470px; }
+
+@keyframes bananaMove {
+  0% {
+    margin-left: 0; }
+  25% {
+    margin-left: 10px; }
+  50% {
+    margin-left: 0; }
+  75% {
+    margin-left: -10px; }
+  100% {
+    margin-left: 0; } }
+  main .akiho {
+    position: absolute;
+    top: 24%;
+    left: 39%;
+    z-index: 1; }
+    main .akiho img {
+      height: 603px; }
+    main .akiho .akihoShadow {
+      opacity: 0;
+      position: absolute;
+      left: -3px;
+      top: -6px; }
+      main .akiho .akihoShadow.active {
+        opacity: 0.5; }
+    main .akiho .akihoHover {
+      position: absolute;
+      left: 0;
+      opacity: 0; }
+  main .akiho:hover .akihoHover {
+    opacity: 1; }
+  main .shizuku {
+    position: absolute;
+    z-index: 2;
+    top: 36%;
+    left: 55%; }
+    main .shizuku img {
+      height: 603px; }
+    main .shizuku .shizukuShadow {
+      opacity: 0;
+      position: absolute;
+      left: -7px;
+      top: -21px; }
+      main .shizuku .shizukuShadow.active {
+        opacity: 0.5; }
+    main .shizuku .shizukuHover {
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: -21px; }
+  main .shizuku:hover .shizukuHover {
+    opacity: 1; }
+  main .kanata {
+    position: absolute;
+    z-index: 2;
+    top: 37%;
+    left: 23%; }
+    main .kanata img {
+      height: 603px; }
+    main .kanata .kanataShadow {
+      opacity: 0;
+      position: absolute;
+      left: -3px;
+      top: -4px; }
+      main .kanata .kanataShadow.active {
+        opacity: 0.5; }
+    main .kanata .kanataHover {
+      position: absolute;
+      left: 0;
+      opacity: 0; }
+  main .kanata:hover .kanataHover {
+    opacity: 1; }
+  main .rina {
+    position: absolute;
+    z-index: 1;
+    top: 27%;
+    left: 10%; }
+    main .rina img {
+      height: 571px; }
+    main .rina .rinaShadow {
+      opacity: 0;
+      position: absolute;
+      left: 0; }
+      main .rina .rinaShadow.active {
+        opacity: 0.5; }
+    main .rina .rinaHover {
+      position: absolute;
+      left: 0;
+      opacity: 0; }
+  main .rina:hover .rinaHover {
+    opacity: 1; }
+  main .igarashi {
+    position: absolute;
+    top: 17%;
+    left: 28%; }
+    main .igarashi img {
+      height: 535px; }
+    main .igarashi .igarashiShadow {
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: -5px; }
+      main .igarashi .igarashiShadow.active {
+        opacity: 0.5; }
+    main .igarashi .igarashiHover {
+      position: absolute;
+      left: 0;
+      top: -6px;
+      opacity: 0; }
+  main .igarashi:hover .igarashiHover {
+    opacity: 1; }
+  main .shizumori {
+    position: absolute;
+    top: 16%;
+    left: 57%; }
+    main .shizumori img {
+      height: 533px; }
+    main .shizumori .shizumoriShadow {
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: -20px; }
+      main .shizumori .shizumoriShadow.active {
+        opacity: 0.5; }
+    main .shizumori .shizumoriHover {
+      position: absolute;
+      left: 0;
+      top: -18px;
+      opacity: 0; }
+  main .shizumori:hover .shizumoriHover {
+    opacity: 1; }
+  main .aikawa {
+    position: absolute;
+    z-index: 1;
+    top: 27%;
+    left: 71%; }
+    main .aikawa img {
+      height: 527px; }
+    main .aikawa .aikawaShadow {
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: -16px; }
+      main .aikawa .aikawaShadow.active {
+        opacity: 0.5; }
+    main .aikawa .aikawaHover {
+      position: absolute;
+      left: 0;
+      top: -19px;
+      opacity: 0; }
+  main .aikawa:hover .aikawaHover {
+    opacity: 1; }
+  main .bdBanner {
+    position: absolute;
+    top: 5%;
+    left: 5%; }
+    main .bdBanner img {
+      width: 120px; }
+  main .logo {
+    z-index: 4; }
+  main .logo.fix {
+    position: fixed;
+    bottom: 8%;
+    left: 3%; }
+    main .logo.fix img {
+      width: 70%; }
+  main .logo.fix.active {
+    position: absolute;
+    bottom: 25px; }
+  main .catch {
+    z-index: 4; }
+  main .catch.fix {
+    position: fixed;
+    bottom: 6%;
+    right: -3%; }
+    main .catch.fix img {
+      width: 58%; }
+  main .catch.fix.active {
+    position: absolute;
+    bottom: 25px; }
+
+.border {
+  width: 100%;
+  height: 10px;
+  content: '';
+  display: block;
+  background: #e9528e;
+  background-image: radial-gradient(#c8426b 25%, transparent 0), radial-gradient(#c8426b 25%, transparent 0);
+  background-position: 0 0,15px 25px;
+  background-size: 10px 10px; }
+
+.infoArea {
+  position: relative;
+  display: flex; }
+  .infoArea__newsArea {
+    background: url(../common/img/infoback2.png);
+    height: 1000px;
+    width: 62%;
+    position: relative; }
+    .infoArea__newsArea__animal {
+      position: absolute;
+      width: 550px;
+      height: 543px;
+      left: 0;
+      bottom: 0; }
+      .infoArea__newsArea__animal img {
+        opacity: 0.5; }
+    .infoArea__newsArea__bananaP {
+      width: 123px;
+      height: 72px;
+      position: absolute;
+      top: 10px;
+      right: 70px; }
+    .infoArea__newsArea__news {
+      width: 632px;
+      margin: 0 auto;
+      position: absolute;
+      right: 5%; }
+      .infoArea__newsArea__news__title {
+        width: 160px;
+        margin: 22px auto 5px; }
+      .infoArea__newsArea__news__post {
+        background: url(../common/img/textback.png);
+        width: 305px;
+        height: 286px;
+        margin-right: 8px;
+        padding: 20px 22px 0 40px;
+        color: #7f2334;
+        font-weight: bold;
+        display: inline-block;
+        position: relative; }
+        .infoArea__newsArea__news__post__date {
+          width: 92px;
+          height: 19px;
+          color: #e9528e;
+          padding-top: 3px;
+          font-size: 7px; }
+        .infoArea__newsArea__news__post__thumb {
+          width: 235px;
+          height: 128px;
+          margin: 10px 0;
+          position: relative; }
+          .infoArea__newsArea__news__post__thumb a {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2; }
+        .infoArea__newsArea__news__post__tit {
+          margin-bottom: 2px;
+          font-size: 12px; }
+          .infoArea__newsArea__news__post__tit::before {
+            width: 8px;
+            height: 13px;
+            content: '';
+            margin-right: 3px;
+            background: url(../common/img/hart.png);
+            display: inline-block; }
+        .infoArea__newsArea__news__post__content {
+          width: 230px;
+          height: 50px;
+          font-size: 11px;
+          line-height: 18px; }
+      .infoArea__newsArea__news__post.active::after {
+        width: 276px;
+        height: 224px;
+        position: absolute;
+        top: 12%;
+        left: 7%;
+        content: '';
+        background: url(../common/img/over_banana_pink.png) no-repeat; }
+      .infoArea__newsArea__news__post:hover.active::after {
+        animation: bananaAnime 0.3s linear forwards; }
+
+@keyframes bananaAnime {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: rotate(10deg) scale(0.9); }
+  100% {
+    transform: rotate(20deg) scale(0.8); } }
+      .infoArea__newsArea__news__loveLine {
+        width: 630px;
+        height: 17px;
+        margin: 10px 0;
+        content: '';
+        background: url(../common/img/loveline.png); }
+      .infoArea__newsArea__news__btnNews {
+        width: 73px;
+        height: 81px;
+        margin: 15px auto 0;
+        background: url(../common/img/more2.png); }
+  .infoArea__twitterArea {
+    background: url(../common/img/twitterback.png);
+    height: 1000px;
+    width: 38%;
+    position: relative; }
+    .infoArea__twitterArea__genderP {
+      width: 82px;
+      height: 59px;
+      position: absolute;
+      top: 30px;
+      left: 13px; }
+    .infoArea__twitterArea__beefstew {
+      width: 165px;
+      height: 220px;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+    .infoArea__twitterArea__twitter {
+      margin-top: 22px;
+      position: absolute;
+      left: 10%; }
+      .infoArea__twitterArea__twitter__title {
+        width: 185px;
+        margin: 0 auto; }
+      .infoArea__twitterArea__twitter__timeLine {
+        background: url(../common/img/twittertextback.png);
+        width: 321px;
+        height: 612px;
+        margin: 0 auto;
+        padding: 20px; }
+      .infoArea__twitterArea__twitter__btn {
+        background: url(../common/img/twitterlogo.png);
+        width: 73px;
+        height: 81px;
+        margin: 15px auto 0;
+        position: relative; }
+        .infoArea__twitterArea__twitter__btn a {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0; }
+  .infoArea__bannerArea {
+    width: 865px;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    margin-left: -425px;
+    display: flex;
+    justify-content: center; }
+    .infoArea__bannerArea li:first-of-type {
+      margin-right: 15px; }
+    .infoArea__bannerArea li:first-of-type img:first-of-type {
+      margin: 0 auto 5px; }
+    .infoArea__bannerArea li:first-of-type img:last-of-type {
+      width: 100%; }
+    .infoArea__bannerArea li img {
+      display: block; }

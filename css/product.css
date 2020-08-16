@@ -1,0 +1,118 @@
+main {
+  background: url(../common/img/bg_plaid_blue.png);
+  padding-bottom: 100px; }
+  main .gnavArea {
+    background: #0075c2; }
+  main .gnav__product {
+    background: url(../common/img/productHover.svg) no-repeat; }
+  main .product {
+    width: 1020px;
+    margin: 0 auto;
+    padding-top: 35px; }
+    main .product .title {
+      width: 140px;
+      margin: 0 auto 12px; }
+    main .product .categoryArea {
+      width: 750px;
+      margin: 36px auto 0;
+      display: flex;
+      justify-content: space-between; }
+      main .product .categoryArea li {
+        position: relative; }
+      main .product .categoryArea li:nth-of-type(n+2)::after {
+        background: url(../common/img/over_pen_b.png) no-repeat;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -40px 0 0 -45px;
+        content: '';
+        display: none; }
+      main .product .categoryArea li:nth-of-type(n+2).active::after {
+        display: block;
+        animation: pen 0.1s steps(18) forwards; }
+
+@keyframes pen {
+  100% {
+    background-position: -1360px; } }
+      main .product .categoryArea .all {
+        background: url(../common/img/allBlue.svg) no-repeat;
+        background-size: cover;
+        width: 40px;
+        height: 23px; }
+      main .product .categoryArea .dvd {
+        width: 193px;
+        height: 27px;
+        background-size: cover;
+        background: url(../common/img/dvd.svg) no-repeat; }
+      main .product .categoryArea .music {
+        width: 87px;
+        height: 23px;
+        background: url(../common/img/music.svg) no-repeat;
+        background-size: cover; }
+      main .product .categoryArea .book {
+        width: 74px;
+        height: 23px;
+        background: url(../common/img/book.svg) no-repeat;
+        background-size: cover; }
+      main .product .categoryArea .goods {
+        width: 93px;
+        height: 23px;
+        background: url(../common/img/goods.svg) no-repeat;
+        background-size: cover;
+        position: relative;
+        pointer-events: none; }
+        main .product .categoryArea .goods__stop {
+          background: url(../common/img/stopblue.svg) no-repeat;
+          background-size: cover;
+          width: 54px;
+          height: 54px;
+          content: '';
+          display: block;
+          margin: -27px 0 0 -27px;
+          position: absolute;
+          top: 50%;
+          left: 50%; }
+    main .product .productList {
+      width: 1024px;
+      margin: 37px auto 0;
+      display: flex;
+      flex-wrap: wrap; }
+      main .product .productList li {
+        width: 249px;
+        height: 344px;
+        margin: 0 7px 25px 0;
+        padding-top: 30px;
+        background: url(../common/img/bg_info.png) no-repeat;
+        background-size: cover;
+        text-align: center;
+        position: relative; }
+        main .product .productList li a {
+          z-index: 2;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0; }
+      main .product .productList li::after {
+        width: 276px;
+        height: 224px;
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        margin: -112px 0 0 -138px;
+        background: url(../common/img/over_banana_blue.png) no-repeat;
+        display: none; }
+      main .product .productList li.active::after {
+        display: block;
+        animation: bananaAnime 0.2s linear forwards; }
+
+@keyframes bananaAnime {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: rotate(10deg) scale(0.9); }
+  100% {
+    transform: rotate(20deg) scale(0.8); } }

@@ -1,0 +1,77 @@
+main {
+  background: url(../common/img/bg_onair.jpeg) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  background-position: 0 30px;
+  background-attachment: fixed; }
+  main .gnav__onair {
+    background: url(../common/img/onairHover.svg) no-repeat; }
+  main .onair {
+    position: relative;
+    z-index: 1;
+    margin-top: 16%; }
+    main .onair .box {
+      color: #002878;
+      width: 927px;
+      margin: 20px auto 0; }
+      main .onair .box .inner {
+        background: url(../common/img/onairTextback.png) no-repeat;
+        width: 951px;
+        height: 823px;
+        padding: 35px 120px 38px 140px; }
+        main .onair .box .inner .title {
+          width: 160px;
+          margin: 0 auto 17px; }
+        main .onair .box .inner table {
+          border-collapse: collapse;
+          width: 100%; }
+          main .onair .box .inner table tr {
+            border-top: solid 1px #0098f5; }
+          main .onair .box .inner table td {
+            padding: 20px 0;
+            font-weight: bold; }
+          main .onair .box .inner table .none {
+            border-top: none; }
+            main .onair .box .inner table .none th {
+              color: #0098f5;
+              font-size: 12px; }
+          main .onair .box .inner table .none th:first-of-type {
+            width: 190px; }
+          main .onair .box .inner table .none th:nth-of-type(2) {
+            width: 170px; }
+          main .onair .box .inner table .none th:nth-of-type(3) {
+            width: 150px; }
+          main .onair .box .inner table .none th:nth-of-type(4) {
+            width: 140px; }
+          main .onair .box .inner table .top {
+            border-top: solid 1px #bfe5fc; }
+            main .onair .box .inner table .top td {
+              padding: 20px 0 10px; }
+          main .onair .box .inner table .middle td {
+            padding: 10px 0; }
+        main .onair .box .inner .attention {
+          text-align: right;
+          font-weight: bold;
+          font-size: 12px; }
+    main .onair .blue {
+      color: #0098f5; }
+    main .onair .box.streaming {
+      line-height: 2;
+      text-align: center;
+      color: #002878;
+      font-weight: bold;
+      height: 1450px; }
+      main .onair .box.streaming .big {
+        font-size: 32px;
+        margin-top: 25px; }
+      main .onair .box.streaming .link {
+        color: #0098f5;
+        font-size: 20px; }
+      main .onair .box.streaming .end {
+        background: url(../common/img/onairTextback.png) no-repeat;
+        margin-left: -140px;
+        margin-top: -423px;
+        width: 951px;
+        content: "";
+        height: 500px; }

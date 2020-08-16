@@ -1,0 +1,175 @@
+main{
+  background:url(../common/img/bg_plaid_orange.png);
+  padding-bottom: 70px;
+  .gnavArea{
+    background: #f03c00;
+  }
+  .gnav__excite{
+    background:url(../common/img/exciteHover.svg)no-repeat;
+  }
+  .excite{
+    width: 925px;
+    margin: 0 auto;
+    padding-top: 30px;
+    .title{
+      width: 175px;
+      margin: 0 auto 20px;
+    }
+    &__nav{
+      display: flex;
+      justify-content: center;
+      &__movie{
+        height: 27px;
+        width: 82px;
+        background:url(../common/img/movie.png)no-repeat;
+        background-size: 100%;
+        margin-left: 50px;
+      }
+      &__download{
+        height: 27px;
+        width: 136px;
+        background:url(../common/img/download2.png)no-repeat;
+        background-size: 100%;
+        position: relative;
+      }
+      &__download::after{
+        background:url(../common/img/over_pen_o.png)no-repeat;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -40px 0 0 -45px;
+        content: '';
+        display: none;
+      }
+      &__download.active::after{
+        display: block;
+        animation: pen 0.1s steps(18) forwards;
+      }
+      &__interview{
+        height: 23px;
+        width: 141px;
+        background:url(../common/img/interview2.png)no-repeat;
+        background-size: 100%;
+        position: relative;
+      }
+      &__interview::after{
+        background:url(../common/img/over_pen_o.png)no-repeat;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -40px 0 0 -45px;
+        content: '';
+        display: none;
+      }
+      &__interview.active::after{
+        display: block;
+        animation: pen 0.1s steps(18) forwards;
+      }
+      @keyframes pen{
+        100%{
+          background-position: -1360px;
+        }
+      }
+      li:nth-of-type(n+2){
+        margin-left: 30px;
+      }
+    }
+    &__inner{
+      background:url(../common/img/bg_info_inner.png)repeat-y;
+      background-size: 100%;
+      width: 951px;
+      padding-top: 38px;
+      margin-top: 50px;
+      &__head{
+        height: 29px;
+        margin: 0 auto;
+        text-align: center;
+        img{
+          width: 15%;
+        }
+      }
+      &__movie{
+        width: 780px;
+        margin: 50px auto 70px;
+        list-style: none;
+        font-weight: bold;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        li{
+          width: 365px;
+          margin: 0 25px 30px 0;
+          position: relative;
+          .new{
+            position: absolute;
+            top: -45px;
+            left: 5px;
+            width: 68px;
+            height: 38px;
+          }
+          .subject{
+            width: 365px;
+            padding-top: 3px;
+            color: #f03c00;
+            display: flex;
+            margin-top: 5px;
+            font-size: 18px;
+          }
+          .subject::before{
+            background:url(../common/img/movieicon.svg)no-repeat;
+            background-size: cover;
+            width: 19px;
+            height: 19px;
+            margin-right: 3px;
+            content: '';
+          }
+          .overBanana::after{
+            width: 276px;
+            height: 224px;
+            position: absolute;
+            top: 44%;
+            left: 50%;
+            margin: -112px 0 0 -138px;
+            content: '';
+            display: none;
+            background:url(../common/img/over_banana_pink.png)no-repeat;
+          }
+          .overBanana.active::after{
+            display: block;
+            animation: bananaAnime 0.2s linear forwards;
+          }
+          @keyframes bananaAnime{
+            0%{
+              transform: scale(1);
+            }
+            50%{
+              transform: rotate(10deg) scale(0.9);
+            }
+            100%{
+              transform: rotate(20deg) scale(0.8);
+            }
+          }
+        }
+        li:nth-of-type(3n){
+          background:url(../common/img/orangeline.svg)no-repeat;
+          background-size: cover;
+          width: 781px;
+          height: 15px;
+        }
+        .movieEnd{
+          position: absolute;
+          left: -86px;
+          bottom: -30px;
+          background:url(../common/img/bg_info_end.png)no-repeat;
+          background-size: 100%;
+          height: 30px;
+          width: 951px;
+        }
+      }
+    }
+  }
+}

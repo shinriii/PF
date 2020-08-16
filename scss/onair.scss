@@ -1,0 +1,103 @@
+main{
+  background:url(../common/img/bg_onair.jpeg)no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  background-position: 0 30px;
+  background-attachment: fixed;
+  .gnav__onair{
+    background:url(../common/img/onairHover.svg)no-repeat;
+  }
+  .onair{
+    position: relative;
+    z-index: 1;
+    margin-top: 16%;
+    .box{
+      color: #002878;
+      width: 927px;
+      margin: 20px auto 0;
+      .inner{
+        background:url(../common/img/onairTextback.png)no-repeat;
+        width: 951px;
+        height: 823px;
+        padding: 35px 120px 38px 140px;
+        .title{
+          width: 160px;
+          margin: 0 auto 17px;
+        }
+        table{
+          border-collapse: collapse;
+          width: 100%;
+          tr{
+            border-top: solid 1px #0098f5;
+          }
+          td{
+            padding: 20px 0;
+            font-weight: bold;
+          }
+          .none{
+            border-top: none;
+            th{
+              color: #0098f5;
+              font-size: 12px;
+            }
+          }
+          .none th:first-of-type{
+            width: 190px;
+          }
+          .none th:nth-of-type(2){
+            width: 170px;
+          }
+          .none th:nth-of-type(3){
+            width: 150px;
+          }
+          .none th:nth-of-type(4){
+            width: 140px;
+          }
+          .top{
+            border-top: solid 1px #bfe5fc;
+            td{
+              padding: 20px 0 10px;
+            }
+          }
+          .middle{
+            td{
+              padding: 10px 0;
+            }
+          }
+        }
+        .attention{
+          text-align: right;
+          font-weight: bold;
+          font-size: 12px;
+        }
+      }
+    }
+    .blue{
+      color: #0098f5;
+    }
+    .box.streaming{
+      line-height: 2;
+      text-align: center;
+      color: #002878;
+      font-weight: bold;
+      height: 1450px;
+      .big{
+        font-size: 32px;
+        margin-top: 25px;
+      }
+      .link{
+        color: #0098f5;
+        font-size: 20px;
+      }
+      .end{
+        background:url(../common/img/onairTextback.png)no-repeat;
+        margin-left: -140px;
+        margin-top: -423px;
+        width: 951px;
+        content: "";
+        height: 500px;
+      }
+    }
+  }
+}

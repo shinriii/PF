@@ -1,0 +1,229 @@
+main{
+  background:url(../common/img/bg_plaid_pink.png);
+  padding-bottom: 100px;
+  position: relative;
+  .gnavArea{
+    background-color:#e9528e;
+  }
+  .gnav__news{
+    background:url(../common/img/newsHover.svg)no-repeat;
+  }
+  .news{
+    width: 950px;
+    margin: 0 auto;
+    padding-top: 33px;
+    position: relative;
+    z-index: 1;
+    .title{
+      width: 158px;
+      margin: 0 auto;
+    }
+    .categoryArea{
+      width: 760px;
+      margin: 25px auto 0;
+      display:flex;
+      li{
+        margin-right: 60px;
+        position: relative;
+      }
+      li:last-of-type{
+        margin-right: 0;
+      }
+      .all{
+        background:url(../common/img/all.svg)no-repeat;
+        background-size: cover;
+        width: 39px;
+        height: 22px;
+      }
+      .event{
+        background:url(../common/img/event.svg)no-repeat;
+        width: 90px;
+        height: 25px;
+      }
+      .event::after{
+        background:url(../common/img/over_pen_p.png)no-repeat;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -40px 0 0 -45px;
+        content: '';
+        display: none;
+      }
+      .product::after{
+        background:url(../common/img/over_pen_p.png)no-repeat;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -40px 0 0 -45px;
+        content: '';
+        display: none;
+      }
+      .other::after{
+        background:url(../common/img/over_pen_p.png)no-repeat;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -40px 0 0 -45px;
+        content: '';
+        display: none;
+      }
+      .event.active::after{
+        display: block;
+        animation: pen 0.1s steps(18) forwards;
+      }
+      .product.active::after{
+        display: block;
+        animation: pen 0.1s steps(18) forwards;
+      }
+      .other.active::after{
+        display: block;
+        animation: pen 0.1s steps(18) forwards;
+      }
+      @keyframes pen{
+        100%{
+          background-position: -1360px;
+        }
+      }
+      .campaign{
+        width: 149px;
+        height: 29px;
+        background:url(../common/img/campaign.svg)no-repeat;
+      }
+      .campaign::after{
+        width: 54px;
+        height: 54px;
+        content: '';
+        display: block;
+        margin: -27px 0 0 -27px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background:url(../common/img/stop.svg)no-repeat;
+      }
+      .product{
+        width: 145px;
+        height: 25px;
+        background:url(../common/img/product.svg)no-repeat;
+      }
+      .other{
+        width: 96px;
+        height: 25px;
+        background:url(../common/img/other.svg)no-repeat;
+      }
+    }
+    .newsList{
+      width: 950px;
+      margin: 22px auto 0;
+      li:nth-of-type(4n){
+        width: 953px;
+        height: 17px;
+        margin: 20px 0 20px -10px;
+        content: '';
+        display: block;
+        background:url(../common/img/bg_love_line.png)repeat-x;
+      }
+      .overBanana__link{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+      }
+      .overBanana{
+        background:url(../common/img/textback.svg)no-repeat;
+        width: 305px;
+        height: 286px;
+        margin-right: 8px;
+        padding: 20px 0 0 40px;
+        background-size: cover;
+        font-size: .7rem;
+        color: #7f2334;
+        position: relative;
+        display: inline-block;
+        font-weight: 700;
+        .date{
+          width: 92px;
+          height: 19px;
+          color: #e9528e;
+          padding-top: 3px;
+          font-size: .6rem;
+          background-size: cover;
+          background:url(../common/img/bananaLine.svg)no-repeat;
+        }
+        .thumb{
+          width: 235px;
+          height: 128px;
+          margin: 10px 0;
+          overflow: hidden;
+        }
+        .tit{
+          width: 240px;
+          font-size: .8rem;
+          margin-bottom: 2px;
+        }
+        .tit::before{
+          width: 8px;
+          height: 13px;
+          margin-right: 3px;
+          content: '';
+          display: inline-block;
+          background:url(../common/img/bg_love_line.png)no-repeat;
+        }
+        .content{
+          width: 230px;
+          height: 50px;
+          line-height: 17px;
+        }
+      }
+      .overBanana a{
+        z-index: 2;
+      }
+      .overBanana::after{
+        width: 276px;
+        height: 224px;
+        position: absolute;
+        top: 12%;
+        left: 7%;
+        content: '';
+        background:url(../common/img/over_banana_pink.png)no-repeat;
+        display:none;
+      }
+      .overBanana.active::after{
+        display: block;
+        z-index: 1;
+        animation: bananaAnime 0.3s linear forwards;
+      }
+      @keyframes bananaAnime{
+        0%{
+          transform: scale(1);
+        }
+        50%{
+          transform: rotate(10deg) scale(0.9);
+        }
+        100%{
+          transform: rotate(20deg) scale(0.8);
+        }
+      }
+
+    }
+  }
+  .leftChara{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: .25;
+  }
+  .rightChara{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: .25;
+  }
+}

@@ -1,0 +1,205 @@
+main{
+  position: relative;
+  .productDetail{
+    color: #002147;
+    position: relative;
+    width: 828px;
+    margin: 0 auto;
+    padding-top: 33px;
+    .title{
+      width: 140px;
+      margin: 0 auto 20px;
+    }
+    .tabList{
+      margin-bottom: 30px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      .basic{
+        background:url(../common/img/basic.blue.svg)no-repeat;
+        background-size: cover;
+        width: 109px;
+        height: 27px;
+        margin-right: 60px;
+      }
+      .original{
+        width: 248px;
+        height: 27px;
+        background:url(../common/img/originalblue.svg)no-repeat;
+        background-size: cover;
+      }
+    }
+    .basicContent{
+      font-weight: bold;
+      &__inner{
+        background:url(../common/img/bg_info_inner.png)repeat-y;
+        background-size: 100%;
+        position: relative;
+        line-height: 1.7;
+        width: 828px;
+        padding: 40px 70px 33px 100px;
+        z-index: 2;
+        &__subject{
+          text-indent: -1em;
+          padding-left: 1em;
+          font-size: 23px;
+          margin-bottom: 35px;
+          line-height: 1.3;
+        }
+        &__subject::before{
+          width: 11px;
+          height: 19px;
+          margin-right: 5px;
+          content: '';
+          display: inline-block;
+          background-size: cover;
+          background:url(../common/img/hartblue.png)no-repeat;
+        }
+        &__subject::after{
+          background:url(../common/img/underbananablue.svg)no-repeat;
+          background-size: cover;
+          width: 658px;
+          height: 23px;
+          content: '';
+          display: block;
+          margin: -17px 0 0 -6px;
+          position: absolute;
+          left: 106px;
+        }
+        &__content{
+          display: flex;
+          &__text{
+            width: 310px;
+            margin-right: 13px;
+            font-size: 13px;
+            p:nth-of-type(3){
+              margin-bottom: 20px;
+            }
+            p:nth-of-type(5){
+              font-size: 14px;
+            }
+            &__blue{
+              color: #0075c2;
+              line-height: 1.3;
+              margin-bottom: 10px;
+              font-size: 20px;
+            }
+            .pink{
+              color: #e9528e;
+            }
+            &__btn{
+              margin-top: 25px;
+            }
+          }
+          &__pic{
+            width: 335px;
+            &__iconTiny{
+              color: #0075c2;
+              display: flex;
+              font-size: 11px;
+              margin-top: 10px;
+              margin-left: 15px;
+            }
+            &__iconTiny::before{
+              background:url(../common/img/harttinyblue.svg)no-repeat;
+              background-size: cover;
+              width: 6px;
+              height: 11px;
+              content: '';
+              margin-top: 3px;
+            }
+          }
+        }
+        &__mainText{
+          color: #0075c2;
+          font-size: 20px;
+          margin-bottom: 10px;
+          .small{
+            font-size: 11px;
+            margin-left: 10px;
+          }
+        }
+        &__privilegeList{
+          margin-top: 5px;
+          &__title{
+            color: #0075c2;
+            font-size: 18px;
+          }
+          .amendment{
+            font-size: 14px;
+          }
+          .img{
+            margin-bottom: 20px;
+          }
+          .comicList{
+            display: flex;
+            &__item{
+              margin-right: 10px;
+            }
+          }
+          .iconSmall{
+            color: #0075c2;
+            display: flex;
+            margin-top: 5px;
+            font-size: 12px;
+          }
+          .iconSmall::before{
+            background:url(../common/img/hartblue.png)no-repeat;
+            background-size: cover;
+            width: 6px;
+            height: 11px;
+            content: '';
+            margin: 5px 2px 0 0;
+          }
+        }
+        .tinyText{
+          margin-top: 30px;
+          font-size: 11px;
+        }
+        .attentionTiny{
+          margin-top: 40px;
+          font-size: 11px;
+          .marginLeft{
+            margin-left: 20px;
+          }
+        }
+        .infoEnd{
+          background:url(../common/img/bg_info_end.png)no-repeat;
+          background-size: 100%;
+          width: 828px;
+          height: 36px;
+          position: absolute;
+          bottom: -36px;
+          left: 0;
+        }
+      }
+    }
+    .btnBack{
+      width: 73px;
+      height: 81px;
+      margin: 0 auto;
+      background:url(../common/img/backblue.svg)no-repeat;
+      margin-top: 35px;
+      position: relative;
+      a{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+  .leftChara{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: .25;
+  }
+  .rightChara{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: .25;
+  }
+}

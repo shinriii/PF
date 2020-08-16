@@ -1,0 +1,166 @@
+main {
+  position: relative; }
+  main .productDetail {
+    color: #002147;
+    position: relative;
+    width: 828px;
+    margin: 0 auto;
+    padding-top: 33px; }
+    main .productDetail .title {
+      width: 140px;
+      margin: 0 auto 20px; }
+    main .productDetail .tabList {
+      margin-bottom: 30px;
+      text-align: center;
+      display: flex;
+      justify-content: center; }
+      main .productDetail .tabList .basic {
+        background: url(../common/img/basic.blue.svg) no-repeat;
+        background-size: cover;
+        width: 109px;
+        height: 27px;
+        margin-right: 60px; }
+      main .productDetail .tabList .original {
+        width: 248px;
+        height: 27px;
+        background: url(../common/img/originalblue.svg) no-repeat;
+        background-size: cover; }
+    main .productDetail .basicContent {
+      font-weight: bold; }
+      main .productDetail .basicContent__inner {
+        background: url(../common/img/bg_info_inner.png) repeat-y;
+        background-size: 100%;
+        position: relative;
+        line-height: 1.7;
+        width: 828px;
+        padding: 40px 70px 33px 100px;
+        z-index: 2; }
+        main .productDetail .basicContent__inner__subject {
+          text-indent: -1em;
+          padding-left: 1em;
+          font-size: 23px;
+          margin-bottom: 35px;
+          line-height: 1.3; }
+        main .productDetail .basicContent__inner__subject::before {
+          width: 11px;
+          height: 19px;
+          margin-right: 5px;
+          content: '';
+          display: inline-block;
+          background-size: cover;
+          background: url(../common/img/hartblue.png) no-repeat; }
+        main .productDetail .basicContent__inner__subject::after {
+          background: url(../common/img/underbananablue.svg) no-repeat;
+          background-size: cover;
+          width: 658px;
+          height: 23px;
+          content: '';
+          display: block;
+          margin: -17px 0 0 -6px;
+          position: absolute;
+          left: 106px; }
+        main .productDetail .basicContent__inner__content {
+          display: flex; }
+          main .productDetail .basicContent__inner__content__text {
+            width: 310px;
+            margin-right: 13px;
+            font-size: 13px; }
+            main .productDetail .basicContent__inner__content__text p:nth-of-type(3) {
+              margin-bottom: 20px; }
+            main .productDetail .basicContent__inner__content__text p:nth-of-type(5) {
+              font-size: 14px; }
+            main .productDetail .basicContent__inner__content__text__blue {
+              color: #0075c2;
+              line-height: 1.3;
+              margin-bottom: 10px;
+              font-size: 20px; }
+            main .productDetail .basicContent__inner__content__text .pink {
+              color: #e9528e; }
+            main .productDetail .basicContent__inner__content__text__btn {
+              margin-top: 25px; }
+          main .productDetail .basicContent__inner__content__pic {
+            width: 335px; }
+            main .productDetail .basicContent__inner__content__pic__iconTiny {
+              color: #0075c2;
+              display: flex;
+              font-size: 11px;
+              margin-top: 10px;
+              margin-left: 15px; }
+            main .productDetail .basicContent__inner__content__pic__iconTiny::before {
+              background: url(../common/img/harttinyblue.svg) no-repeat;
+              background-size: cover;
+              width: 6px;
+              height: 11px;
+              content: '';
+              margin-top: 3px; }
+        main .productDetail .basicContent__inner__mainText {
+          color: #0075c2;
+          font-size: 20px;
+          margin-bottom: 10px; }
+          main .productDetail .basicContent__inner__mainText .small {
+            font-size: 11px;
+            margin-left: 10px; }
+        main .productDetail .basicContent__inner__privilegeList {
+          margin-top: 5px; }
+          main .productDetail .basicContent__inner__privilegeList__title {
+            color: #0075c2;
+            font-size: 18px; }
+          main .productDetail .basicContent__inner__privilegeList .amendment {
+            font-size: 14px; }
+          main .productDetail .basicContent__inner__privilegeList .img {
+            margin-bottom: 20px; }
+          main .productDetail .basicContent__inner__privilegeList .comicList {
+            display: flex; }
+            main .productDetail .basicContent__inner__privilegeList .comicList__item {
+              margin-right: 10px; }
+          main .productDetail .basicContent__inner__privilegeList .iconSmall {
+            color: #0075c2;
+            display: flex;
+            margin-top: 5px;
+            font-size: 12px; }
+          main .productDetail .basicContent__inner__privilegeList .iconSmall::before {
+            background: url(../common/img/hartblue.png) no-repeat;
+            background-size: cover;
+            width: 6px;
+            height: 11px;
+            content: '';
+            margin: 5px 2px 0 0; }
+        main .productDetail .basicContent__inner .tinyText {
+          margin-top: 30px;
+          font-size: 11px; }
+        main .productDetail .basicContent__inner .attentionTiny {
+          margin-top: 40px;
+          font-size: 11px; }
+          main .productDetail .basicContent__inner .attentionTiny .marginLeft {
+            margin-left: 20px; }
+        main .productDetail .basicContent__inner .infoEnd {
+          background: url(../common/img/bg_info_end.png) no-repeat;
+          background-size: 100%;
+          width: 828px;
+          height: 36px;
+          position: absolute;
+          bottom: -36px;
+          left: 0; }
+    main .productDetail .btnBack {
+      width: 73px;
+      height: 81px;
+      margin: 0 auto;
+      background: url(../common/img/backblue.svg) no-repeat;
+      margin-top: 35px;
+      position: relative; }
+      main .productDetail .btnBack a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0; }
+  main .leftChara {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: .25; }
+  main .rightChara {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: .25; }

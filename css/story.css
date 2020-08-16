@@ -1,0 +1,233 @@
+main {
+  padding-bottom: 100px;
+  background: url(../common/img/bg_plaid_green.png); }
+  main .gnavArea {
+    background: #6fba2c; }
+  main .gnav__story {
+    background: url(../common/img/story.svg) no-repeat; }
+  main .story {
+    margin-top: 35px;
+    position: relative;
+    font-weight: bold; }
+    main .story .sideMenu {
+      position: fixed;
+      top: 135px;
+      left: 0; }
+      main .story .sideMenu li {
+        width: 71px;
+        height: 38px;
+        margin-bottom: 5px;
+        padding: 12px 15px 10px 10px;
+        cursor: pointer;
+        position: relative; }
+      main .story .sideMenu li a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; }
+      main .story .sideMenu li:nth-of-type(odd) {
+        background: url(../common/img/bg_story_nav_red.png) no-repeat; }
+      main .story .sideMenu li:nth-of-type(odd):hover {
+        background: url(../common/img/bg_story_nav_red_ov.png) no-repeat; }
+      main .story .sideMenu li:nth-of-type(even) {
+        background: url(../common/img/bg_story_nav_blue.png) no-repeat; }
+      main .story .sideMenu li:nth-of-type(even):hover {
+        background: url(../common/img/bg_story_nav_blue_ov.png) no-repeat; }
+    main .story .title {
+      width: 152px;
+      margin: 0 auto 17px; }
+    main .story .box {
+      width: 951px;
+      margin: 0 auto;
+      display: flex; }
+      main .story .box .picArea {
+        width: 448px;
+        margin: 40px 0 0 20px;
+        position: relative; }
+        main .story .box .picArea .prev {
+          width: 25px;
+          height: 23px;
+          padding-top: 4px;
+          background: #fff;
+          position: absolute;
+          top: 115px;
+          left: -16px;
+          cursor: pointer;
+          z-index: 1; }
+          main .story .box .picArea .prev .btn {
+            background: url(../common/img/prevblue2.svg) no-repeat;
+            background-size: cover;
+            width: 10px;
+            height: 14px;
+            display: inline-block;
+            vertical-align: top; }
+        main .story .box .picArea .next {
+          width: 25px;
+          height: 23px;
+          padding-top: 4px;
+          background: #fff;
+          position: absolute;
+          top: 115px;
+          right: -8px;
+          cursor: pointer;
+          z-index: 1; }
+          main .story .box .picArea .next .btn {
+            background: url(../common/img/nextblue.svg) no-repeat;
+            background-size: cover;
+            width: 10px;
+            height: 14px;
+            margin-left: 6px;
+            display: inline-block;
+            vertical-align: top; }
+        main .story .box .picArea .next::after {
+          width: 7px;
+          height: 23px;
+          content: '';
+          margin: -4px 0 0 2px;
+          display: inline-block;
+          background: #0098f5; }
+        main .story .box .picArea .prev::before {
+          background: #0098f5;
+          width: 7px;
+          height: 23px;
+          margin: -4px 3px 0 0;
+          content: '';
+          display: inline-block; }
+        main .story .box .picArea .mainContent {
+          background: url(../common/img/bg_picture.png) no-repeat;
+          width: 448px;
+          height: 288px;
+          position: relative; }
+          main .story .box .picArea .mainContent li {
+            width: 395px;
+            position: absolute;
+            top: 25px;
+            left: 20px;
+            opacity: 0; }
+          main .story .box .picArea .mainContent li.active {
+            opacity: 1;
+            transition: opacity .5s linear; }
+        main .story .box .picArea .subContent {
+          width: 400px;
+          margin: 10px 0 0 18px;
+          display: flex; }
+          main .story .box .picArea .subContent li {
+            width: 85px;
+            margin-right: 20px;
+            cursor: pointer; }
+          main .story .box .picArea .subContent li:last-of-type {
+            margin-right: 0; }
+      main .story .box .infoArea {
+        width: 476px;
+        margin-top: 20px; }
+        main .story .box .infoArea .infoInner {
+          width: 476px;
+          background: url(../common/img/bg_info_inner_r.png) repeat-y;
+          padding: 40px 25px 25px 55px;
+          position: relative; }
+          main .story .box .infoArea .infoInner .titleArea {
+            color: #002878;
+            background: url(../common/img/story10.svg) no-repeat;
+            background-size: cover;
+            width: 362px;
+            height: 151px;
+            padding-top: 85px;
+            text-align: center; }
+            main .story .box .infoArea .infoInner .titleArea p {
+              line-height: 28px;
+              font-size: 18px; }
+          main .story .box .infoArea .infoInner .detailArea {
+            width: 362px;
+            height: 151px;
+            margin: 5px 0 0;
+            line-height: 1.6;
+            text-align: justify;
+            font-size: 0.8rem; }
+            main .story .box .infoArea .infoInner .detailArea .underline {
+              border-bottom: 2px solid #0098f5; }
+          main .story .box .infoArea .infoInner .infoEnd {
+            width: 476px;
+            height: 37px;
+            background: url(../common/img/bg_info_end_r.png) no-repeat;
+            position: absolute;
+            bottom: -36px;
+            left: 0; }
+    main .story .box:nth-of-type(odd) .infoArea .infoInner .detailArea .underline {
+      border-bottom: 2px solid #e9528e; }
+    main .story .box:nth-of-type(odd) .infoArea .infoInner .titleArea {
+      color: #7f2334; }
+    main .story .box:nth-of-type(odd) .picArea .prev .btn {
+      background: url(../common/img/prevpink2.svg) no-repeat;
+      background-size: cover; }
+    main .story .box:nth-of-type(odd) .picArea .prev::before {
+      background: #e9528e; }
+    main .story .box:nth-of-type(odd) .picArea .next .btn {
+      background: url(../common/img/nextpink.svg) no-repeat;
+      background-size: cover; }
+    main .story .box:nth-of-type(odd) .picArea .next::after {
+      background: #e9528e; }
+    main .story .story9 {
+      list-style: none; }
+      main .story .story9 .infoArea .infoInner .titleArea {
+        background: url(../common/img/story9text.svg) no-repeat; }
+    main .story .story8 .infoArea .infoInner .titleArea {
+      background: url(../common/img/main8text.svg) no-repeat; }
+    main .story .story7 {
+      list-style: none; }
+      main .story .story7 .infoArea .infoInner .titleArea {
+        background: url(../common/img/main7text.svg) no-repeat; }
+    main .story .story6 {
+      list-style: none; }
+      main .story .story6 .infoArea .infoInner .titleArea {
+        background: url(../common/img/main6text.svg) no-repeat; }
+    main .story .story5 {
+      list-style: none; }
+      main .story .story5 .infoArea .infoInner .titleArea {
+        background: url(../common/img/main5text.svg) no-repeat; }
+    main .story .story4 {
+      list-style: none; }
+      main .story .story4 .infoArea .infoInner .titleArea {
+        background: url(../common/img/main4text.svg) no-repeat; }
+    main .story .story3 {
+      list-style: none; }
+      main .story .story3 .infoArea .infoInner .titleArea {
+        background: url(../common/img/main3text.svg) no-repeat; }
+    main .story .story2 {
+      list-style: none; }
+      main .story .story2 .infoArea .infoInner .titleArea {
+        background: url(../common/img/main2text.svg) no-repeat; }
+    main .story .story1 {
+      list-style: none; }
+      main .story .story1 .infoArea .infoInner .titleArea {
+        background: url(../common/img/main1text.svg) no-repeat; }
+    main .story .greenLine {
+      height: 22px;
+      margin: 60px auto 5px;
+      width: 951px; }
+    main .story .introduction {
+      width: 951px;
+      margin: 60px auto 0;
+      position: relative; }
+      main .story .introduction .introInner {
+        text-align: center;
+        background: url(../common/img/bg_info_inner.png) repeat-y;
+        background-size: 100%; }
+        main .story .introduction .introInner p {
+          padding: 30px 100px; }
+      main .story .introduction .infoStart {
+        width: 951px;
+        height: 37px;
+        background: url(../common/img/bg_info_inner.png) no-repeat;
+        position: absolute;
+        top: -29px;
+        left: 0px;
+        background-size: 100%; }
+      main .story .introduction .infoEnd {
+        width: 951px;
+        height: 37px;
+        background: url(../common/img/bg_info_inner.png) no-repeat;
+        position: absolute;
+        bottom: -20px;
+        left: 0px;
+        background-size: 100%; }
